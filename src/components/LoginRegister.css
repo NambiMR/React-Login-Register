@@ -1,0 +1,173 @@
+/* Existing styles - preserved */
+
+.wrapper {
+    position: relative;
+    height: 450px;
+    width: 420px;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    border: 2px solid #2d2525;
+    box-shadow: 5px 5px 5px rgb(33, 27, 27);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: height 0.2s ease;
+  }
+  
+  .wrapper.active {
+    height: 520px;
+  }
+  
+  .wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+  }
+  
+  .wrapper .form-box.login {
+    transition: translate 0.18s ease;
+    translate: 0;
+  }
+  
+  .wrapper.active .form-box.login {
+    transition: none;
+    translate: -400px;
+  }
+  
+  .wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    translate: 400px;
+  }
+  
+  .wrapper.active .form-box.register {
+    transition: translate 0.18s ease;
+    translate: 0;
+  }
+  
+  form h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  form .input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+  }
+  
+  .input input {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #dacccc;
+    border-radius: 50px;
+    padding: 20px 45px 20px 20px;
+    color: white;
+  }
+  
+  .input ::placeholder {
+    color: #fff;
+  }
+  
+  .input .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  form .remember {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    font-size: 15px;
+  }
+  
+  .remember label {
+    margin-left: 7px;
+    color: #fff;
+  }
+  
+  .remember a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .remember a:hover {
+    text-decoration: underline;
+  }
+  
+  form button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    color: #2d2525;
+    transition: 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #2d2525;
+    color: #fff;
+    border: 1px solid #dacccc;
+  }
+  
+  form .signup-link {
+    color: #fff;
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  form .signup-link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  form .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+
+  
+  /* ✅ Success Page Style */
+  .form-box.success {
+    text-align: center;
+  }
+  
+  .form-box.success h1 {
+    color: #00ffcc;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .form-box.success button {
+    background-color: #fff;
+    color: #2d2525;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+  }
+  
+  .form-box.success button:hover {
+    background-color: #2d2525;
+    color: #fff;
+    border: 1px solid #dacccc;
+  }
+  
